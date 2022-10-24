@@ -96,7 +96,7 @@ This app was made to learn the [Firebase](https://firebase.google.com) and to pr
 </p>
 
 ## Test this app
-1. To test this app you need to creat a new project on the Firebase [Firebase console](https://console.firebase.google.com/u/0/).
+1. To test this app you need to creat a new project in the [Firebase console](https://console.firebase.google.com/u/0/).
 2. Setup this project for iOS.
 3. Add authentication and Firestore Database to your project.
 4. Download `GoogleService-Info.plist`.
