@@ -10,14 +10,14 @@ import UIKit
 import AVFoundation
 
 // Protocol for receiving data from the inputViewAccessory
-protocol BottomBarViewDelegate {
+protocol BottomBarViewDelegate: AnyObject {
     func sendButtonDidPress(_ bottomBarView: BottomBarView, text: String)
     func textDidChange(_ bottomBarView: BottomBarView, height: CGFloat)
     func showNewMessages(_ bottomBarView: BottomBarView)
 }
 
 final class BottomBarView: UIView {
-    var delegate: BottomBarViewDelegate?
+    weak var delegate: BottomBarViewDelegate?
     private var heightConstraint: NSLayoutConstraint?
 
     // max height for the text view

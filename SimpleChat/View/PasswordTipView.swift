@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-@IBDesignable
 final class PasswordTipView: UIView {
     private let triangleWidth: CGFloat = 20
     private let triangleHeight: CGFloat = 16

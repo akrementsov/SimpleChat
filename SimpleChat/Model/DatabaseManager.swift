@@ -8,7 +8,7 @@
 import Foundation
 import Firebase
 
-protocol DatabaseManagerDelegate {
+protocol DatabaseManagerDelegate: AnyObject {
     func didReceiveMessages(_ databaseManager: DatabaseManager, messages: [MessageModel])
     func listenerDidReceiveMessages(_ databaseManager: DatabaseManager, messages: [MessageModel])
     func didReceiveError(_ databaseManager: DatabaseManager, error: Error)
@@ -25,7 +25,7 @@ final class DatabaseManager {
     private var bottomDocument: QueryDocumentSnapshot?
     private var listenerNew: ListenerRegistration?
     
-    var delegate: DatabaseManagerDelegate?
+    weak var delegate: DatabaseManagerDelegate?
     private let db = Firestore.firestore()
     
     // MARK: - function for sending data to server

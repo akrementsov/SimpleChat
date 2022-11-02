@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class ThereMessageCellView: UITableViewCell {
+final class ThereMessageCellView: UITableViewCell {
     
     lazy private var container: UIView = {
         let view = UIView()

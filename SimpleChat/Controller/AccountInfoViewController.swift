@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class AccountInfoViewController: UIViewController {
+final class AccountInfoViewController: UIViewController {
     @IBOutlet weak var constraint: NSLayoutConstraint!
     @IBOutlet weak var infoButton: UIButton!
     @IBOutlet weak var waitingScreen: UIView!

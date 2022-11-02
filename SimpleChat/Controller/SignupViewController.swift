@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class SignupViewController: UIViewController {
+final class SignupViewController: UIViewController {
     
     @IBOutlet var textFields: [UITextField]!
     @IBOutlet weak var createAccountButton: UIButton!

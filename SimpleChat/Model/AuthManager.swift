@@ -8,7 +8,7 @@
 import Foundation
 import Firebase
 
-protocol AuthManagerDelegate {
+protocol AuthManagerDelegate: AnyObject {
     func didReceiveError(_ authManager: AuthManager, error: Error)
     func didAuthSuccessfully(_ authManager: AuthManager, authResult: AuthDataResult)
     func didAuthWithoutVerification(_ authManager: AuthManager, authResult: AuthDataResult)
@@ -27,7 +27,7 @@ extension AuthManagerDelegate {
 }
 
 final class AuthManager {
-    var delegate: AuthManagerDelegate?
+    weak var delegate: AuthManagerDelegate?
     
     // sign in function
     func signInWith(email: String, password: String) {

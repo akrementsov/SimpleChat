@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class ChatViewController: UIViewController {
+final class ChatViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var constraint: NSLayoutConstraint!
